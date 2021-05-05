@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+SteganograPy.py
+setup.py
+SteganograPy.egg-info/PKG-INFO
+SteganograPy.egg-info/SOURCES.txt
+SteganograPy.egg-info/dependency_links.txt
+SteganograPy.egg-info/entry_points.txt
+SteganograPy.egg-info/requires.txt
+SteganograPy.egg-info/top_level.txt

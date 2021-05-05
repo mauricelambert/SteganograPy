@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: SteganograPy
+Version: 0.0.1
+Summary: This package hide text or bytes in image.
+Home-page: https://github.com/mauricelambert/SteganograPy
+Author: Maurice Lambert
+Author-email: mauricelambert434@gmail.com
+Maintainer: Maurice Lambert
+Maintainer-email: mauricelambert434@gmail.com
+License: GPL-3.0 License
+Download-URL: https://mauricelambert.github.io/info/python/security/SteganograPy.pyz
+Project-URL: Documentation, https://mauricelambert.github.io/info/python/security/SteganograPy.html
+Project-URL: Executable, https://mauricelambert.github.io/info/python/security/SteganograPy.pyz
+Description: # SteganograPy
+        
+        ## Description
+        This package hide text or bytes in image (PNG only).
+        
+        ## Requirements
+        This package require :
+         - python3
+         - python3 Standard Library
+         - pillow
+        
+        ## Installation
+        ```bash
+        pip install SteganograPy
+        ```
+        
+        ## Usages
+        
+        ### Command line:
+        ```bash
+        Stegano -m "My message !" image.jpg
+        python3 -m SteganograPy -d image_stegano.png
+        ```
+        
+        ### Python script
+        ```python
+        from SteganograPy import Stegano
+        
+        Stegano(
+            "image.jpg",
+            message="My message.",
+            color="red",
+            output_file=None,
+        ).build_and_save_new_image()
+        
+        print(Stegano(
+            "image_stegano.png",
+            message=None,
+            color="red",
+            output_file=None,
+        ).get_message().decode())
+        ```
+        
+        ## Command line examples
+        
+        ```bash
+        Stegano -h
+        Stegano -m "My message !" image.jpg
+        Stegano -f test.txt -c green -o test.jpg image.jpg
+        Stegano -d image_stegano.png
+        Stegano -c green -d image.png
+        ```
+        
+        ## Links
+         - [Github Page](https://github.com/mauricelambert/SteganograPy/)
+         - [Documentation](https://mauricelambert.github.io/info/python/security/SteganograPy.html)
+         - [Python executable](https://mauricelambert.github.io/info/python/security/SteganograPy.pyz)
+         - [Pypi package](https://pypi.org/project/SteganograPy/)
+        
+        ## Licence
+        Licensed under the [GPL, version 3](https://www.gnu.org/licenses/).
+        
+Keywords: Package
+Platform: Windows
+Platform: Linux
+Platform: MacOS
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Topic :: Security
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
